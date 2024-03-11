@@ -1,8 +1,8 @@
-import background_homepage from '../assets/background-homepage.png';
+import background_homepage from '../../assets/background-homepage.png';
 
-export function App() {
+export const Home = () => {
   return (
-    <div className="bg-red-900 h-screen w-screen flex flex-col xl:flex-row justify-center items-center space-x-20">
+    <main className="bg-red-900 h-screen w-screen flex flex-col xl:flex-row justify-center items-center space-y-20 md:space-x-20">
       <img
         src={background_homepage}
         alt="Duas pessoas com camisa de time"
@@ -15,13 +15,13 @@ export function App() {
 
         <section className="flex flex-col space-y-4 mt-8 max-w-[472]">
           <a
-            href="#"
+            href="/signup"
             className="min-h-12 bg-white text-center hover:text-red-900 px-2 py-4 rounded-2xl text-red-900 font-bold hover:scale-105 duration-500 "
           >
             Criar minha conta
           </a>
           <a
-            href="#"
+            href="/login"
             className="min-h-12 bg-transparent text-center px-2 py-4 rounded-2xl text-white hover:text-white font-bold border-2 border-white hover:scale-105 duration-500"
           >
             Fazer login
@@ -40,7 +40,7 @@ export function App() {
           </a>
         </span>
       </footer>
-    </div>
+    </main>
   );
-}
+};
 
